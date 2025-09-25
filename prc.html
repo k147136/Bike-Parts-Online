@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Company - Bike Accessories Quality Services</title>
+    <link rel="stylesheet" href="prc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HK Company </h1>
+            <p>Identity of Quality and Excellence - Since 1995</p>
+        </div>
+
+        <div class="image-section">
+        </div>
+        
+        <div class="content-section">
+            <h2>HK company Details</h2>
+            <p>HK Company has been providing quality services in the market since 1995. We offer our customers the best solutions.
+            </p>
+            
+            <button class="button" onclick="showMessage()">Contact Us</button>
+            <button class="button" onclick="toggleContent()">View Our Services</button>
+        </div>
+        
+        <div id="special-box">
+            <h2>Our Specialties</h2>
+            <p>HK Company Identity:</p>
+            <ul>
+                <li>25+ Years of Experience</li>
+                <li>Quality Assurance</li>
+                <li>Customer Satisfaction</li>
+                <li>Modern Technology</li>
+            </ul>
+        </div>
+        
+        <div class="content-section hidden" id="toggle-content">
+            <h2>Our Services</h2>
+            <p>HK Company provides services:</p>
+            <ul>
+                <li>Warranty</li>
+                <li>Different Types of Bikes</li>
+                <li>Genuine Spare Parts</li>
+                <li>Easy Installments</li>
+                <li>Registration And Number Plates</li>
+            </ul>
+        </div>
+        
+        <div class="content-section">
+            <h2>Our Portfolio</h2>
+            <p>We have provided services to the following companies:</p>
+            
+            <button class="button" onclick="changeBackground()">Change Theme</button>
+            <button class="button" onclick="addClient()">Add New Client</button>
+            
+            <ul id="client-list">
+                <li>ABC Corporation</li>
+                <li>XYZ Enterprises</li>
+                <li>Pakistan Traders</li>
+            </ul>
+            
+            <p>Office Timing: <span id="current-time"></span></p>
+        </div>
+        
+        <div class="content-section">
+            <h2>Hamara Mission</h2>
+            <p>Hamara mission hai apne clients ko behtreen technology solutions provide karna aur unki business growth mein madad karna.</p>
+            
+            <h3>Contact Information:</h3>
+            <p>Address: Main Commercial Area DHA, Lahore</p>
+            <p>Phone: +923040116189</p>
+            <p>Email: hk147126@gmail.com</p>
+        </div>
+        
+        <div class="footer">
+            <p>HK Company - Building Your Digital Future</p>
+            <p>&copy; 1995-2023 - HK Company. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!---<script>
+        // JavaScript Functions
+        
+        // Contact message function
+        function showMessage() {
+            alert("Shukriya! Aap HK Company ko contact karna chahte hain.\nPhone: 021-1234567\nEmail: info@hkcompany.com");
+        }
+        
+        // Toggle services function
+        function toggleContent() {
+            var content = document.getElementById("toggle-content");
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+            } else {
+                content.classList.add("hidden");
+            }
+        }
+        
+        // Change background color
+        function changeBackground() {
+            var colors = ["#f5f5f5", "#ffe6e6", "#e6f7ff", "#f0e6ff", "#e6ffe6"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+        
+        // Add client to list
+        function addClient() {
+            var list = document.getElementById("client-list");
+            var newClient = document.createElement("li");
+            var clients = ["Global Tech", "Future Solutions", "Innovate Pakistan", "Smart Business", "Digital Wings"];
+            var randomClient = clients[Math.floor(Math.random() * clients.length)];
+            newClient.textContent = randomClient + " (Naya Client)";
+            list.appendChild(newClient);
+        }
+        
+        // Show current time
+        function updateTime() {
+            var now = new Date();
+            var timeString = now.toLocaleTimeString();
+            document.getElementById("current-time").textContent = timeString;
+        }
+        
+        // Update time every second
+        setInterval(updateTime, 1000);
+        updateTime(); // Initial call
+    </script>
+</body>
+</html>

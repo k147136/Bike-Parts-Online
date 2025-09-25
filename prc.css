@@ -1,0 +1,130 @@
+/* CSS Styles for HK Company */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image-section {
+    background-image: url('nk.jpeg');
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.content-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid #2a5298;
+}
+
+.button {
+    background-color: #1e3c72;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #2a5298;
+    transform: translateY(-2px);
+}
+
+#special-box {
+    background-color: #e8f4f8;
+    border-left: 5px solid #1e3c72;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+#special-box ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1e3c72;
+    color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .header, .content-section {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .button {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+/* Additional styling for company website */
+h2 {
+    color: #1e3c72;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #2a5298;
+}
+
+ul {
+    line-height: 1.6;
+}
